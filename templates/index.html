@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>index</title>
+</head>
+<body>
+<a href="/register">register</a>
+<table border="1px">
+<thead>
+<th>id</th>
+<th>first_name</th>
+<th>last_name</th>
+<th>username</th>
+<th>age</th>
+<th>phonenumber</th>
+</thead>
+{%for data in all%}
+<tbody>
+
+<td>{{ data.id}}</td>
+<td>{{ data.first_name}}</td>
+<td>{{ data.last_name}}</td>
+<td>{{ data.username}}</td>
+<td>{{ data.age}}</td>
+<td>{{ data.phonenumber}}</td>
+
+</tbody>
+{%endfor%}
+</table>
+</body>
+</html>
